@@ -1,0 +1,162 @@
+//location //
+
+.job-offers {
+    background-image: url("../../src/images/image.png");
+    background-position: center 1100px; 
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: 1920px) {
+      background-position: center; 
+
+    }
+
+}
+
+.container {
+    max-width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    
+  }
+
+  @media screen and (min-width: 1920px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // 3 kolumny równej szerokości
+      gap: 2rem; // odstęp między kartami
+      justify-content: center; // wycentrowanie siatki
+    }
+  
+    .job-offer-card,
+    .job-offer-card_transparent {
+      margin-left: 0; // usuń przesunięcie w gridzie
+    }
+  }
+  
+  
+      .offers_title {
+      font-size: 35px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #F9F9F9;
+      margin-bottom: 30px;
+      font-weight: bold;
+  
+      span {
+        color: #95CF2E;
+      }
+    }
+
+    .job-offer-card {
+       
+        position: relative;
+        background-color: #0d0d0d;
+        border-radius: 1.5rem;
+        padding: 20px;
+        color: #fff;
+        width: 322px;
+        height: 432px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        border: 1px solid #313131;
+        margin-left: -28px;
+
+      }
+      
+
+
+      .job-offer-card_transparent {
+       
+        position: relative;
+        background-color: #0d0d0d85;
+        border-radius: 1.5rem;
+        padding: 20px;
+        color: #fff;
+        width: 322px;
+        height: 432px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        border: 1px solid #313131;
+        margin-left: -28px;
+
+
+      }
+
+
+    .department {
+        padding: 12px;
+        background-color: #4D88A0;
+        border-radius: 100px;
+        width:62%;
+    }
+  
+    .title {
+        font-size: 22px;
+        color: #95CF2E;
+        text-align: left;
+    }
+
+    .location {
+      color: #787878 ;
+      font-size: 14px;
+    }
+
+    .details {
+      margin-top: 20px;
+      max-width: 200px;
+     
+      .contract, .experience{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      }
+      
+    }
+  
+    .cta {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      background-color: #95cf2e;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+  
+     .see-all {
+        align-items: center;
+        background-color: #161616;
+        color: #F9F9F9;
+        padding: 12px 20px 12px 15px;
+        border-radius: 40px;
+        border: 1px solid #F9F9F9;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        gap: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        img {
+          width: 36px;
+          height: 36px;
+          background-color: #95CF2E;
+          border-radius: 100px;
+          
+          
+        }
+     }

@@ -1,0 +1,154 @@
+.boss-section {
+    display: block;
+  
+    @media screen and (min-width: 1920px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+  
+  .boss-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+    .boss-dst {
+      display: none;
+    }
+  
+    @media screen and (min-width: 1920px) {
+      width: 40%;
+      align-self: center;
+      margin-bottom: 0;
+  
+      .boss-mobile {
+        display: none;
+      }
+  
+      .boss-dst {
+        display: block;
+      }
+    }
+  
+    img {
+      max-width: 585px;
+      height: auto;
+    }
+  }
+  
+  .boss-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+    @media screen and (min-width: 1920px) {
+      width: 60%;
+      margin-top: 120px;
+      margin-left: -50px;
+    }
+  }
+  
+  .boss {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 10px;
+  
+    span {
+      color: #95CF2E;
+    }
+  
+    @media screen and (min-width: 1920px) {
+      font-size: 80px;
+      text-align: left;
+    }
+  }
+  
+  .right-content {
+    display: flex;
+    flex-direction: column;
+  
+    @media screen and (min-width: 1920px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+  
+  .boss_dsc {
+    flex: 1;
+  
+    @media screen and (min-width: 1920px) {
+      max-width: 435px;
+    }
+  
+    .underline {
+      border: none;
+      border-top: 1px solid #95CF2E;
+      width: 283px;
+      margin-left: 0;
+    }
+  
+    p {
+      color: white;
+      font-size: 18px;
+    }
+  
+    span {
+      color: #95CF2E;
+    }
+  }
+  
+  .boss_title {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .boxes {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    color: white;
+  
+    @media screen and (min-width: 1920px) {
+      margin-top: 0;
+      align-self: flex-start;
+    }
+  
+    img {
+      margin-bottom: 20px;
+    }
+  
+    li {
+      list-style: none;
+    }
+  
+    .hobby,
+    .languages {
+      width: 156px;
+      background-color: black;
+      border-radius: 25px;
+      padding: 20px;
+
+      @media screen and (min-width: 1920px) {
+        width: 208px;
+        height: 235px;
+        font-size: 18px;
+        margin-top: 30px;
+        
+      }
+  
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="../css/main.min.css">
 </head>
 <body>
 
@@ -15,11 +15,11 @@
   <include src="./Partials/Welcome.html"></include>
   <include src="./Partials/About.html"></include>
   <include src="./Partials/Inna.html"></include>
-  <include src="./Partials/Offers.html"></include>
   <include src="./Partials/Team.html"></include>
+  <include src="./Partials/Offers.html"></include>
   <include src="./Partials/Footer.html"></include>
 
-  <!-- Include loader script -->
+  
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const includes = document.querySelectorAll("include[src]");
@@ -35,6 +35,22 @@
       });
     });
   </script>
+
+<script>
+  
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("scrollY", window.scrollY);
+  });
+
+  
+  window.addEventListener("load", () => {
+    const y = localStorage.getItem("scrollY");
+    if (y !== null) {
+      window.scrollTo(0, parseInt(y));
+    }
+  });
+</script>
+
 
 </body>
 </html>

@@ -1,4 +1,10 @@
-//location //
+.container {
+  max-width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
 
 .location-container {
     background-color: #95CF2E;
@@ -7,10 +13,186 @@
     margin-top: 35px;
     width: 322px;
     height: 216px;
-    
+    position: relative;
+    margin-bottom: 100px;
+
+    @media screen and (min-width: 1920px) {
+      width: 890px;
+      height: 416px;
+      margin-top: -10px;
+    }
   
     span {
       font-size: 60px;
     }
+  }
+
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    .first {
+      display: flex;
+  
+      h3 {
+        font-size: 60px;
+        margin-top: -10px;
+  
+        @media screen and (min-width: 1920px) {
+          font-size: 84px;
+        }
+      }
+  
+      p {
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 15px;
+  
+        @media screen and (min-width: 1920px) {
+          font-size: 28px;
+          width: 732px;
+  
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    .second {
+      margin-top: 40px;
+  
+      @media screen and (min-width: 1920px) {
+        margin-top: auto;
+        display: block;
+      }
+  
+      .lublin {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+  
+        @media screen and (min-width: 1920px) {
+          font-size: 28px;
+        }
+      }
+  
+      p {
+        font-size: 14px;
+  
+        @media screen and (min-width: 1920px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
+  
+  .about-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F9F9F9;
+    margin-bottom: 10px;
+
+    span {
+      color: #95CF2E;
+    }
+  }
+  
+  .up{
+    color: #F9F9F9;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .down {
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #D1D1D1;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+
+    @media screen and (min-width: 1920px) {
+      font-size: 24px;
+      width: 1256px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      margin-top: 150px;
+      margin-bottom: -150px;
+    }
+  }
+
+
+  .location-section {
+    display: block;
+  
+    @media screen and (min-width: 1920px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+    }
+  }
+  
+  .location-image {
+    margin-bottom: 30px;
+
+    .foodcom-dst {
+      display: none;
+    }
+  
+    @media screen and (min-width: 1920px) {
+      width: 50%;
+      margin-bottom: 0;
+  
+      .foodcom-dst {
+        display: block;
+      }
+
+      .foodcom-mobile {
+        display: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+  }
+  
+  .location-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+ 
+  
+    @media screen and (min-width: 1920px) {
+      width: 50%;
+
+      margin-right: 100px;
+    .about-title {
+      font-size: 80px;
+      text-align: left;
+      line-height: 120%;
+      width: 892px;
+    }
+
+    .up {
+      font-size: 18px;
+      text-align: left;
+      width: 892px;
+    }
+
+  }
   }
   

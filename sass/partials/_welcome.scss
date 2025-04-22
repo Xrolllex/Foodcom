@@ -4,18 +4,26 @@
     background-color: #F9F9F9;
     display: flex;
     gap: 20px;
-    padding: 30px 0 50px;
+    padding: 30px 0 40px;
     align-items: center;
    
   
-    img {
+    .mobile-line {
       width: 60px;
       height: 7px;
+
+      @media screen and (min-width: 1920px) {
+        display: none;
+      }
     }
   
     h2 {
       font-size: 14px;
       font-weight: 150;
+      @media screen and (min-width: 1920px) {
+        font-size: 24px;
+      }
+
     }
   }
   
@@ -23,20 +31,50 @@
   // 1 FOTO //
   
   .welcome {
-    background-image: url("../images/Rectangle 42050.png");
+    background-image: url("../../src/images/Rectangle42050.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 393px;
     width: 100%;
     position: relative;
+
+    @media screen and (min-width: 1920px) {
+    background-image: url("../../src/images/Rectangle42050-dst.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+      
+    }
   
   
-    img {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
+    img.lublin-mobile,
+img.lublin-dst {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+img.lublin-dst {
+  display: none;
+}
+
+@media screen and (min-width: 1920px) {
+  img.lublin-mobile {
+    display: none;
+  }
+
+  img.lublin-dst {
+    display: block;
+    width: 936px;
+    margin-top: -25px;
+  }
+}
+
      
     }
     h1 {
@@ -46,6 +84,12 @@
       left: 38%;
       transform: translateX(-50%);
       text-align: center;
+
+      @media screen and (min-width: 1920px) {
+       font-size:80px;
+       top: 225px;
+       left: 36%;
+      }
     }
-  }
+  
   
