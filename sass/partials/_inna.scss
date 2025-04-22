@@ -104,12 +104,16 @@
   }
   
   .boss_title {
-    margin-top: 20px;
+    margin-top: -20px;
     font-size: 18px;
     text-align: left;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
+
+    @media screen and (min-width: 1920px) {
+      margin-top: 20px;
+    }
   }
   
   .boxes {
