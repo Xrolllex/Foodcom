@@ -1,0 +1,51 @@
+// Branch //
+
+.branch {
+    background-color: #F9F9F9;
+    display: flex;
+    gap: 20px;
+    padding: 30px 0 50px;
+    align-items: center;
+   
+  
+    img {
+      width: 60px;
+      height: 7px;
+    }
+  
+    h2 {
+      font-size: 14px;
+      font-weight: 150;
+    }
+  }
+  
+  
+  // 1 FOTO //
+  
+  .welcome {
+    background-image: url("../images/Rectangle 42050.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 393px;
+    width: 100%;
+    position: relative;
+  
+  
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+     
+    }
+    h1 {
+      color: #F9F9F9;
+      position: absolute;
+      top: 65px;
+      left: 38%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }
+  
